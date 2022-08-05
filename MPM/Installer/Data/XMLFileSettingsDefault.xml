@@ -1,0 +1,6 @@
+﻿<tblSettings>
+  <Setting>
+    <Name>DATA_SOURCE</Name>
+    <Value>Data Source=C:\APS\Data\Jobs\Default\Log.db</Value>
+  </Setting>
+</tblSettings>

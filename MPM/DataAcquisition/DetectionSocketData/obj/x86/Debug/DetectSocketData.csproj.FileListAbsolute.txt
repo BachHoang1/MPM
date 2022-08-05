@@ -1,0 +1,9 @@
+C:\EMHDDLocator\DetectSocketData\bin\x86\Debug\DetectSocketData.dll
+C:\EMHDDLocator\DetectSocketData\bin\x86\Debug\DetectSocketData.pdb
+C:\EMHDDLocator\DetectSocketData\bin\x86\Debug\ConstantDefines.dll
+C:\EMHDDLocator\DetectSocketData\bin\x86\Debug\ConstantDefines.pdb
+C:\EMHDDLocator\DetectSocketData\obj\x86\Debug\DetectSocketData.csproj.CoreCompileInputs.cache
+C:\EMHDDLocator\DetectSocketData\obj\x86\Debug\DetectSocketData.csproj.CopyComplete
+C:\EMHDDLocator\DetectSocketData\obj\x86\Debug\DetectSocketData.dll
+C:\EMHDDLocator\DetectSocketData\obj\x86\Debug\DetectSocketData.pdb
+C:\EMHDDLocator\DetectSocketData\obj\x86\Debug\DetectSocketData.csproj.AssemblyReference.cache

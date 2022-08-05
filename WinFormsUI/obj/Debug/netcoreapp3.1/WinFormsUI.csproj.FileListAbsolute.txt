@@ -1,0 +1,10 @@
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsUI\bin\Debug\netcoreapp3.1\WinFormsUI.deps.json
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsUI\bin\Debug\netcoreapp3.1\WinFormsUI.dll
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsUI\bin\Debug\netcoreapp3.1\WinFormsUI.pdb
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsUI\obj\Debug\netcoreapp3.1\WeifenLuo.WinFormsUI.Docking.Strings.resources
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsUI\obj\Debug\netcoreapp3.1\WinFormsUI.csproj.GenerateResource.cache
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsUI\obj\Debug\netcoreapp3.1\WinFormsUI.AssemblyInfoInputs.cache
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsUI\obj\Debug\netcoreapp3.1\WinFormsUI.AssemblyInfo.cs
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsUI\obj\Debug\netcoreapp3.1\WinFormsUI.csproj.CoreCompileInputs.cache
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsUI\obj\Debug\netcoreapp3.1\WinFormsUI.dll
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsUI\obj\Debug\netcoreapp3.1\WinFormsUI.pdb

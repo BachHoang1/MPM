@@ -1,0 +1,877 @@
+﻿
+<tblProtocolCommands>
+   <Command>
+     <MessageCode>6</MessageCode>
+      <APSName>TF Type</APSName>
+      <DisplayName>TF Type</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>#</NativeUnit>      
+      <Purpose>Toolface Type (G = 0 or M=1)</Purpose>
+   </Command>
+   <Command>
+     <MessageCode>7</MessageCode>
+      <APSName>Toolface</APSName>
+      <DisplayName>TF</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Toolface</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>8</MessageCode>
+      <APSName>Inclination</APSName>
+      <DisplayName>INC</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>     
+      <Purpose>Inclination</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>8</MessageCode>
+      <APSName>Calculated Inclination</APSName>
+      <DisplayName>INC</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>
+      <Purpose>Inclination</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>9</MessageCode>
+      <APSName>Azimuth</APSName>
+      <DisplayName>AZM</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Azimuth</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>9</MessageCode>
+      <APSName>Calculated Azimuth</APSName>
+      <DisplayName>AZM</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>
+      <Purpose>Azimuth</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>10</MessageCode>
+      <APSName>Gravity</APSName>
+      <DisplayName>Grav Field</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Gravity Total</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>10</MessageCode>
+      <APSName>Calculated Grav Total</APSName>
+      <DisplayName>Grav Field</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>
+      <Purpose>Gravity Total</Purpose>
+   </Command>
+   <Command>
+     <MessageCode>11</MessageCode>
+      <APSName>Mag. Field</APSName>
+      <DisplayName>Mag Field</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose>Magnetic Total</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>11</MessageCode>
+      <APSName>Calculated Mag Total</APSName>
+      <DisplayName>Mag Field</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>
+      <Purpose>Magnetic Total</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>12</MessageCode>
+      <APSName>Temperature</APSName>
+      <DisplayName>Temp</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°C</NativeUnit>      
+      <Purpose>Temperature</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>15</MessageCode>
+      <APSName>Acc X</APSName>
+      <DisplayName>Gx</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Acc Vector X</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>15</MessageCode>
+      <APSName>Acc X (12-bit)</APSName>
+      <DisplayName>Gx</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Acc Vector X</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>16</MessageCode>
+      <APSName>Acc Y</APSName>
+      <DisplayName>Gy</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Acc Vector Y</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>16</MessageCode>
+      <APSName>Acc Y (12-bit)</APSName>
+      <DisplayName>Gy</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Acc Vector Y</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>17</MessageCode>
+      <APSName>Acc Z</APSName>
+      <DisplayName>Gz</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Acc Vector Z</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>17</MessageCode>
+      <APSName>Acc Z (12-bit)</APSName>
+      <DisplayName>Gz</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Acc Vector Z</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>18</MessageCode>
+      <APSName>Mag X</APSName>
+      <DisplayName>Bx</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose>Mag Vector X</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>18</MessageCode>
+      <APSName>Mag X (12-bit)</APSName>
+      <DisplayName>Bx</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose>Mag Vector X</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>18</MessageCode>
+      <APSName>Mag X (16-bit)</APSName>
+      <DisplayName>Bx</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose>Mag Vector X</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>19</MessageCode>
+      <APSName>By</APSName>
+      <DisplayName>By</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose>Mag Vector Y</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>19</MessageCode>
+      <APSName>Mag Y (12-bit)</APSName>
+      <DisplayName>By</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose>Mag Vector Y</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>19</MessageCode>
+      <APSName>Mag Y (16-bit)</APSName>
+      <DisplayName>By</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose>Mag Vector Y</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>20</MessageCode>
+      <APSName>Bz</APSName>
+      <DisplayName>Bz</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose>Mag Vector Z</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>20</MessageCode>
+      <APSName>Mag Z (12-bit)</APSName>
+      <DisplayName>Bz</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose>Mag Vector Z</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>20</MessageCode>
+      <APSName>Mag Z (16-bit)</APSName>
+      <DisplayName>Bz</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose>Mag Vector Z</Purpose>
+   </Command>
+  <Command>
+    <MessageCode>21</MessageCode>
+    <APSName>Packet</APSName>
+    <DisplayName>Packet</DisplayName>
+    <DataType>INT</DataType>
+    <NativeUnit>#</NativeUnit>
+    <Purpose>Indicates what config packet was decoded</Purpose>
+  </Command>
+   <Command>
+      <MessageCode>22</MessageCode>
+      <APSName>deltaMTF</APSName>
+      <DisplayName>deltaMTF</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Change in Magnetic TF</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>23</MessageCode>
+      <APSName>Gamma</APSName>
+      <DisplayName>Gamma</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>CPS</NativeUnit>      
+      <Purpose>Gamma CPS</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>23</MessageCode>
+      <APSName>Gamma (12-bit)</APSName>
+      <DisplayName>Gamma</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>CPS</NativeUnit>      
+      <Purpose>Gamma CPS</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>24</MessageCode>
+      <APSName>B Pressure</APSName>
+      <DisplayName>Bore Pr</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>psi</NativeUnit>      
+      <Purpose>Bore Pressure</Purpose>
+    </Command>
+    <Command>
+      <MessageCode>25</MessageCode>
+      <APSName>A Pressure</APSName>
+      <DisplayName>Annular Pr</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>psi</NativeUnit>      
+      <Purpose>Annular Pressure</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>26</MessageCode>
+      <APSName>A Volt</APSName>
+      <DisplayName>Ant Volt</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>V</NativeUnit>      
+      <Purpose>Antenna Voltage</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>27</MessageCode>
+      <APSName>Power</APSName>
+      <DisplayName>Power</DisplayName>
+      <DataType>MAP:20,6,6~11,11~20</DataType>
+      <NativeUnit>W</NativeUnit>      
+      <Purpose>Power Level Range: 0=>20W, 1=6W, 2=6-11W, 3=11-20W </Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>28</MessageCode>
+      <APSName>Battery</APSName>
+      <DisplayName>Battery</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>#</NativeUnit>      
+      <Purpose>Battery in use: 0 = battery is off, 1 = battery is on</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>31</MessageCode>
+      <APSName>MDecl</APSName>
+      <DisplayName>MDecl</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Sends MagDec (old way)</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>32</MessageCode>
+      <APSName>TFO</APSName>
+      <DisplayName>TFO</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Sends TFO (old way)</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>33</MessageCode>
+      <APSName>Sig Strength</APSName>
+      <DisplayName>Sig Strength</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>mV</NativeUnit>      
+      <Purpose>Signal Strength</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>35</MessageCode>
+      <APSName>Pason Depth</APSName>
+      <DisplayName>Depth</DisplayName>
+      <DataType>Packet</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>Contains depth data from Pason: Bit and Hole</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>37</MessageCode>
+      <APSName>Vib X</APSName>
+      <DisplayName>Vib X</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Local axial vibration</Purpose>      
+   </Command>
+   <Command>
+      <MessageCode>38</MessageCode>
+      <APSName>Vib Y</APSName>
+      <DisplayName>Vib Y</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Local lateral vibration</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>39</MessageCode>
+      <APSName>Vib</APSName>
+      <DisplayName>Vib</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>#</NativeUnit>      
+      <Purpose>TX Shutdown Bit = 1 if transmission is stopping</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>40</MessageCode>
+      <APSName>Noise</APSName>
+      <DisplayName>Noise</DisplayName>
+      <DataType>UINT</DataType>
+      <NativeUnit>#</NativeUnit>      
+      <Purpose>Represents Noise in the Signal</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>41</MessageCode>
+      <APSName>Return</APSName>
+      <DisplayName>Return</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>Return code value after downlink</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>43</MessageCode>
+      <APSName>DLRigCode</APSName>
+      <DisplayName>Rig Code</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>#</NativeUnit>      
+      <Purpose>Rig code returned after downlink</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>44</MessageCode>
+      <APSName>Return2</APSName>
+      <DisplayName>Return 2</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>Return code value after downlink</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>45</MessageCode>
+      <APSName>BatCapA</APSName>
+      <DisplayName>Bat Cap A</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>46</MessageCode>
+      <APSName>BatCapB</APSName>
+      <DisplayName>Bat Cap B</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>47</MessageCode>
+      <APSName>Formation Resistance</APSName>
+      <DisplayName>Form Res</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>Ohms</NativeUnit>      
+      <Purpose>Formation Resistance</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>48</MessageCode>
+      <APSName>Transmit Power</APSName>
+      <DisplayName>XMit Power</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>W</NativeUnit>      
+      <Purpose>Transmit Power</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>49</MessageCode>
+      <APSName>Return3</APSName>
+      <DisplayName>Return 3</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>50</MessageCode>
+      <APSName>Return 4</APSName>
+      <DisplayName>Return 4</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>51</MessageCode>
+      <APSName>BX16</APSName>
+      <DisplayName>BX16</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>52</MessageCode>
+      <APSName>BY16</APSName>
+      <DisplayName>BY16</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>53</MessageCode>
+      <APSName>BZ16</APSName>
+      <DisplayName>BZ16</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>Gs</NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>55</MessageCode>
+      <APSName>GammaVB</APSName>
+      <DisplayName>Gamma VB</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>56</MessageCode>
+      <APSName>VibXY</APSName>
+      <DisplayName>Vib XY</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>60</MessageCode>
+      <APSName>Near Bit Inclination</APSName>
+      <DisplayName>NB INC</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Near Bit Inclination</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>61</MessageCode>
+      <APSName>Near Bit Azimuth</APSName>
+      <DisplayName>NB AZM</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Near Bit Azimuth</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>62</MessageCode>
+      <APSName>Near Bit Gamma Up</APSName>
+      <DisplayName>NB Gam.Up</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>CPS</NativeUnit>      
+      <Purpose>Near Bit Gamma Up</Purpose>   
+   </Command>
+   <Command>
+     <MessageCode>63</MessageCode>
+      <APSName>Near Bit Gamma Down</APSName>
+      <DisplayName>NB Gam.Dn</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>CPS</NativeUnit>      
+      <Purpose>Near Bit Gamma Down</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>65</MessageCode>
+      <APSName>Near Bit Rotation</APSName>
+      <DisplayName>NB Rot</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>RPM</NativeUnit>      
+      <Purpose>Near Bit RPM</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>67</MessageCode>
+      <APSName>Dip Angle</APSName>
+      <DisplayName>Dip Angle</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Dip angle of Earth</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>67</MessageCode>
+      <APSName>Calculated Dip Angle</APSName>
+      <DisplayName>Dip Angle</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>
+      <Purpose>Dip angle of Earth</Purpose>
+   </Command>
+   <Command>
+      <MessageCode>68</MessageCode>
+      <APSName>Bent Sub 1</APSName>
+      <DisplayName>Bent Sub 1</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>Bent Sub data</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>69</MessageCode>
+      <APSName>Bent Sub 2</APSName>
+      <DisplayName>Bent Sub 2</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>Bent Sub data</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>70</MessageCode>
+      <APSName>Bent Sub 3</APSName>
+      <DisplayName>Bent Sub 3</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>Bent Sub data</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>71</MessageCode>
+      <APSName>Bent Sub 4</APSName>
+      <DisplayName>Bent Sub 4</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>Bent Sub data</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>73</MessageCode>
+      <APSName>Rotation</APSName>
+      <DisplayName>Rotation</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>RPM</NativeUnit>      
+      <Purpose>Rotation rate in RPM</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>74</MessageCode>
+      <APSName>Local Vib 5</APSName>
+      <DisplayName>Loc Vib5</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>75</MessageCode>
+      <APSName>Local Vib 8</APSName>
+      <DisplayName>Loc Vib8</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>76</MessageCode>
+      <APSName>Gamma 12</APSName>
+      <DisplayName>Gamma 12</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>CPS</NativeUnit>      
+      <Purpose>Higher precision gamma data</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>77</MessageCode>
+      <APSName>Return 5</APSName>
+      <DisplayName>Return 5</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>80</MessageCode>
+      <APSName>CBG ResB</APSName>
+      <DisplayName>CBG ResB</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>CGB Data, uniquely decoded</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>81</MessageCode>
+      <APSName>CBG ResV</APSName>
+      <DisplayName>CBG ResV</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>CGB Data, uniquely decoded</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>82</MessageCode>
+      <APSName>CBG ResA</APSName>
+      <DisplayName>CBG ResA</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>CGB Data, uniquely decoded</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>83</MessageCode>
+      <APSName>CBG ResC</APSName>
+      <DisplayName>CBG ResC</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>CGB Data, uniquely decoded</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>84</MessageCode>
+      <APSName>CBG NGT</APSName>
+      <DisplayName>CBG NGT</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit></NativeUnit>      
+      <Purpose>CGB Data, uniquely decoded</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>85</MessageCode>
+      <APSName>Aux Azimuth</APSName>
+      <DisplayName>Aux AZM</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Azimuth from Aux Source</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>86</MessageCode>
+      <APSName>Aux Inc</APSName>
+      <DisplayName>Aux INC</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Inclination from Aux Source</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>87</MessageCode>
+      <APSName>Aux Toolface</APSName>
+      <DisplayName>Aux TF</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Toolface from Aux Source</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>88</MessageCode>
+      <APSName>Pump Pressure</APSName>
+      <DisplayName>Pump Pr</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>psi</NativeUnit>      
+      <Purpose>Pressure from pump</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>89</MessageCode>
+      <APSName>Aux Pressure</APSName>
+      <DisplayName>Aux Pr</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>psi</NativeUnit>      
+      <Purpose>Pressure from Aux Source</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>90</MessageCode>
+      <APSName>Aux Temp</APSName>
+      <DisplayName>Aux Temp</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°C</NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>91</MessageCode>
+      <APSName>Aux Gamma</APSName>
+      <DisplayName>Aux Gama</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>CPS</NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>92</MessageCode>
+      <APSName>Aux Shock</APSName>
+      <DisplayName>Aux Shock</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose></Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>93</MessageCode>
+      <APSName>Mag Dec</APSName>
+      <DisplayName>Mag Dec</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Magnetic Declination</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>94</MessageCode>
+      <APSName>TFO</APSName>
+      <DisplayName>TFO</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Toolface offset added to TF values</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>95</MessageCode>
+      <APSName>Gamma Corr</APSName>
+      <DisplayName>Gamma Corr</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>#</NativeUnit>      
+      <Purpose>Correction factor multiplier applied to gamma value</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>96</MessageCode>
+      <APSName>Gamma to Bit</APSName>
+      <DisplayName>Gama to Bit</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>m</NativeUnit>      
+      <Purpose>Distance from Gamma to Bit</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>97</MessageCode>
+      <APSName>Dir to Bit</APSName>
+      <DisplayName>Dir to Bit</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>m</NativeUnit>      
+      <Purpose>Distance from Directional Sensor to Bit</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>98</MessageCode>
+      <APSName>Shock Level Axial</APSName>
+      <DisplayName>Shk Lvl Axl</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>#</NativeUnit>      
+      <Purpose>Shock Level From Bins</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>99</MessageCode>
+      <APSName>Shock Level Transverse</APSName>
+      <DisplayName>Shk Lvl TrnsV</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>#</NativeUnit>      
+      <Purpose>Shock Level from Bins</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>100</MessageCode>
+      <APSName>Shock Avg Axial</APSName>
+      <DisplayName>Shk Avg Axl</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Shock Average Axial</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>101</MessageCode>
+      <APSName>Shock Avg Transverse</APSName>
+      <DisplayName>Shk Avg TrnsV</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Shock Average Transverse</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>102</MessageCode>
+      <APSName>Shock Max Axial</APSName>
+      <DisplayName>Shk Max Axl</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Shock Max Axial</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>103</MessageCode>
+      <APSName>Shock Max Transverse</APSName>
+      <DisplayName>Shk Max TrnsV</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>Shock Max Transverse</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>104</MessageCode>
+      <APSName>RMS Vib Axial</APSName>
+      <DisplayName>RMS Vib Axl</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>RMS Vib Axial</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>105</MessageCode>
+      <APSName>RMS Vib Transverse</APSName>
+      <DisplayName>RMS Vib TrnsV</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>g</NativeUnit>      
+      <Purpose>RMS Vib Transverse</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>106</MessageCode>
+      <APSName>Shock Level</APSName>
+      <DisplayName>Shock Level</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>#</NativeUnit>
+      <ColorMap>green=0,yellow=1,orange=2,red=4</ColorMap>
+      <Purpose>Shock Light Indicator: 0=green, 1=yellow, 2=orange, 3=red</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>107</MessageCode>
+      <APSName>Vib Level</APSName>
+      <DisplayName>Vib Level</DisplayName>
+      <DataType>INT</DataType>
+      <NativeUnit>#</NativeUnit>    
+      <ColorMap>green=0,yellow=1,orange=2,red=3</ColorMap>
+      <Purpose>Vib Light Indicator: 0=green, 1=yellow, 2=orange, 3=red</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>108</MessageCode>
+      <APSName>Res Phase</APSName>
+      <DisplayName>Res Phase</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>°</NativeUnit>      
+      <Purpose>Resistivity Phase</Purpose>   
+   </Command>
+   <Command>
+      <MessageCode>109</MessageCode>
+      <APSName>Res Ratio</APSName>
+      <DisplayName>Res Ratio</DisplayName>
+      <DataType>DOUBLE</DataType>
+      <NativeUnit>#</NativeUnit>      
+      <Purpose>Resistivity Amplitude Ratio</Purpose>   
+   </Command>
+  <Command>
+    <MessageCode>10108</MessageCode>
+    <APSName>Bit Depth</APSName>
+    <DisplayName>Bit Depth</DisplayName>
+    <DataType>DOUBLE</DataType>
+    <NativeUnit>ft</NativeUnit>
+    <Purpose>WITS Channel 0108</Purpose>
+  </Command>
+  <Command>
+    <MessageCode>10110</MessageCode>
+    <APSName>Hole Depth</APSName>
+    <DisplayName>Hole Depth</DisplayName>
+    <DataType>DOUBLE</DataType>
+    <NativeUnit>ft</NativeUnit>
+    <Purpose>WITS Channel 0110</Purpose>
+  </Command>
+  <Command>
+    <MessageCode>10113</MessageCode>
+    <APSName>Rate of Penetration</APSName>
+    <DisplayName>ROP</DisplayName>
+    <DataType>DOUBLE</DataType>
+    <NativeUnit>ft/Hr</NativeUnit>
+    <Purpose>WITS Channel 0113</Purpose>
+  </Command>
+  <Command>
+    <MessageCode>10121</MessageCode>
+    <APSName>Standpipe Pressure</APSName>
+    <DisplayName>Pump</DisplayName>
+    <DataType>DOUBLE</DataType>
+    <NativeUnit>Psi</NativeUnit>
+    <Purpose>WITS Channel 0121</Purpose>
+  </Command>
+  <Command>
+    <MessageCode>10130</MessageCode>
+    <APSName>Mud Flow In</APSName>
+    <DisplayName>Mud Flow In</DisplayName>
+    <DataType>DOUBLE</DataType>
+    <NativeUnit>M3/Min</NativeUnit>
+    <Purpose>WITS Flow Rate 0130</Purpose>
+  </Command>
+  <Command>
+    <MessageCode>10211</MessageCode>
+    <APSName>WOB</APSName>
+    <DisplayName>WOB</DisplayName>
+    <DataType>DOUBLE</DataType>
+    <NativeUnit>KLB</NativeUnit>
+    <Purpose>WITS Weight on Bit 0211</Purpose>
+  </Command>
+</tblProtocolCommands>

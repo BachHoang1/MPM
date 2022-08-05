@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9074E683-3DAE-4B4A-987D-9133292F092E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MPM</RootNamespace>
+    <AssemblyName>MPM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\Program Files (x86)\System.Data.SQLite\2010\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Connections.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Connections.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.Connections.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections.Client, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Connections.Client.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.Http.Connections.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections.Common, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Connections.Common.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.Http.Connections.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Client, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Client.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Client.Core, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Client.Core.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.SignalR.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Common, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Common.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.SignalR.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Protocols.Json, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Protocols.Json.3.1.3\lib\netstandard2.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.1.3\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Designer, Version=1.0.105.2, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\System.Data.SQLite\2010\bin\SQLite.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.114.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\System.Data.SQLite\2010\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.114.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\System.Data.SQLite\2010\bin\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.114.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\System.Data.SQLite\2010\bin\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.4.7.1\lib\netstandard2.0\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.7.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.7.1\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.4.7.0\lib\netstandard2.0\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015">
+      <HintPath>Libs\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
+    <Reference Include="WinFormsUI">
+      <HintPath>Libs\WinFormsUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAcquisition\CClient.cs" />
+    <Compile Include="DataAcquisition\CDetect.cs" />
+    <Compile Include="DataAcquisition\CPason.cs" />
+    <Compile Include="DataAcquisition\CServer.cs" />
+    <Compile Include="DataAcquisition\CServerMessage.cs" />
+    <Compile Include="DataAcquisition\DataAcquisitionDetect.cs" />
+    <Compile Include="DataAcquisition\DataParser.cs" />
+    <Compile Include="DataAcquisition\DataReceiver.cs" />
+    <Compile Include="DataAcquisition\DetectionSocketData\DetectSockData.cs" />
+    <Compile Include="DataAcquisition\DetectionSocketData\DetectSocketDataSingleton.cs" />
+    <Compile Include="DataAcquisition\Helpers\BufferSplitter.cs" />
+    <Compile Include="DataAcquisition\Helpers\Command.cs" />
+    <Compile Include="DataAcquisition\Helpers\Common.cs" />
+    <Compile Include="DataAcquisition\Helpers\Factor.cs" />
+    <Compile Include="DataAcquisition\Helpers\PacketT.cs" />
+    <Compile Include="DataAcquisition\Helpers\Settings.cs" />
+    <Compile Include="DataAcquisition\Helpers\Utilities.cs" />
+    <Compile Include="DataAcquisition\MultiStationAnalysis\Annotations.cs" />
+    <Compile Include="DataAcquisition\MultiStationAnalysis\CMSAChatMessage.cs" />
+    <Compile Include="DataAcquisition\MultiStationAnalysis\CMSAClient.cs" />
+    <Compile Include="DataAcquisition\MultiStationAnalysis\CMSAHubClient.cs" />
+    <Compile Include="DataAcquisition\MultiStationAnalysis\Datum.cs" />
+    <Compile Include="DataAcquisition\MultiStationAnalysis\MSASurveyAdminState.cs" />
+    <Compile Include="DataAcquisition\MultiStationAnalysis\SurveyMeasurementDetails.cs" />
+    <Compile Include="DataAcquisition\MultiStationAnalysis\SurveyTrajectoryItem.cs" />
+    <Compile Include="DataAcquisition\MultiStationAnalysis\SurveyType.cs" />
+    <Compile Include="DataAcquisition\MultiStationAnalysis\SystemsOfMeasurement.cs" />
+    <Compile Include="DataAcquisition\ParsedDataPacket.cs" />
+    <Compile Include="DataAcquisition\Raw.cs" />
+    <Compile Include="Data\CBitRun.cs" />
+    <Compile Include="Data\CCommonTypes.cs" />
+    <Compile Include="Data\CCurrentReading.cs" />
+    <Compile Include="Data\CDepth.cs" />
+    <Compile Include="Data\CDetectDataLayer.cs" />
+    <Compile Include="Data\CDPointLookupTable.cs" />
+    <Compile Include="Data\CDrillContext.cs" />
+    <Compile Include="Data\CDrillingBase.cs" />
+    <Compile Include="Data\CEquivalentCirculatingDensity.cs" />
+    <Compile Include="Data\CEventDPoint.cs" />
+    <Compile Include="Data\CEventDPointText.cs" />
+    <Compile Include="Data\CEventRawMPSamples.cs" />
+    <Compile Include="Data\CEventDetect.cs" />
+    <Compile Include="Data\CEventSurvey.cs" />
+    <Compile Include="Data\CEventWITS.cs" />
+    <Compile Include="Data\CFormSettingsLookup.cs" />
+    <Compile Include="Data\CGamma.cs" />
+    <Compile Include="Data\CJobInfo.cs" />
+    <Compile Include="Data\CLASJobInfo.cs" />
+    <Compile Include="Data\CLogTransducerSetting.cs" />
+    <Compile Include="Data\CLogTransducerSettingRecord.cs" />
+    <Compile Include="Data\CMSASettings.cs" />
+    <Compile Include="Data\CSettingsLookup.cs" />
+    <Compile Include="Data\CSurveyLog.cs" />
+    <Compile Include="Data\CUnitSelection.cs" />
+    <Compile Include="Data\CWITSRecordECD.cs" />
+    <Compile Include="Data\CWITSRecordSurvey.cs" />
+    <Compile Include="Data\DataSetSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSettings.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DummyDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DummyDoc.Designer.cs">
+      <DependentUpon>DummyDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormChat.Designer.cs">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormConfigureWITSData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormConfigureWITSData.Designer.cs">
+      <DependentUpon>FormConfigureWITSData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormECD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormECD.Designer.cs">
+      <DependentUpon>FormECD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormFFTEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormFFTEM.Designer.cs">
+      <DependentUpon>FormFFTEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormFFT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormFFT.Designer.cs">
+      <DependentUpon>FormFFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormLASCurveSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormLASCurveSelection.Designer.cs">
+      <DependentUpon>FormLASCurveSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormMSASettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMSASettings.Designer.cs">
+      <DependentUpon>FormMSASettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormPlotSamplesEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormPlotSamplesEM.Designer.cs">
+      <DependentUpon>FormPlotSamplesEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormRealTimeDetectLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormRealTimeDetectLog.Designer.cs">
+      <DependentUpon>FormRealTimeDetectLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormReceiverSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormReceiverSetting.Designer.cs">
+      <DependentUpon>FormReceiverSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormRegisterProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormRegisterProduct.Designer.cs">
+      <DependentUpon>FormRegisterProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\CLogASCIIStandard.cs" />
+    <Compile Include="Data\CLogDataLayer.cs" />
+    <Compile Include="Data\CLogDataRecord.cs" />
+    <Compile Include="Data\CMasterSurveyLog.cs" />
+    <Compile Include="Data\CPressure.cs" />
+    <Compile Include="Data\CPressureTransducer.cs" />
+    <Compile Include="Data\CSurvey.cs" />
+    <Compile Include="Data\CSystemConstants.cs" />
+    <Compile Include="Data\CTrueVerticalDepthManager.cs" />
+    <Compile Include="Data\CWellJob.cs" />
+    <Compile Include="Data\CWellPath.cs" />
+    <Compile Include="Data\CWITSLookupTable.cs" />
+    <Compile Include="Data\CWITSRecord.cs" />
+    <Compile Include="Data\CWITSRecordTF.cs" />
+    <Compile Include="Data\DataSetFormSettings.cs">
+      <DependentUpon>DataSetFormSettings.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataSetFormSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFormSettings.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataSetProtocolCommands.cs">
+      <DependentUpon>DataSetProtocolCommands.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataSetProtocolCommands.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProtocolCommands.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataSetWITS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetWITS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormConfigureWITS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormConfigureWITS.Designer.cs">
+      <DependentUpon>FormConfigureWITS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormIPAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormIPAddress.Designer.cs">
+      <DependentUpon>FormIPAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormLASExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormLASExport.Designer.cs">
+      <DependentUpon>FormLASExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormLastSurvey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormLastSurvey.Designer.cs">
+      <DependentUpon>FormLastSurvey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormLegend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormLegend.Designer.cs">
+      <DependentUpon>FormLegend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormDPointSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormDPointSelection.Designer.cs">
+      <DependentUpon>FormDPointSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormGamma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormGamma.Designer.cs">
+      <DependentUpon>FormGamma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormINCWhileDrilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormINCWhileDrilling.Designer.cs">
+      <DependentUpon>FormINCWhileDrilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormLog.Designer.cs">
+      <DependentUpon>FormLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormPressureTransducerParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormPressureTransducerParameters.Designer.cs">
+      <DependentUpon>FormPressureTransducerParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormPlotSamples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormPlotSamples.Designer.cs">
+      <DependentUpon>FormPlotSamples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormPumpPowerTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormPumpPowerTemp.Designer.cs">
+      <DependentUpon>FormPumpPowerTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQualifiers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQualifiers.Designer.cs">
+      <DependentUpon>FormQualifiers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormRemoteControl560R.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormRemoteControl560R.Designer.cs">
+      <DependentUpon>FormRemoteControl560R.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormServerMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormServerMessage.Designer.cs">
+      <DependentUpon>FormServerMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormServerSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormServerSetup.Designer.cs">
+      <DependentUpon>FormServerSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSNRPlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSNRPlot.Designer.cs">
+      <DependentUpon>FormSNRPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSurveyAcceptReject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSurveyAcceptReject.Designer.cs">
+      <DependentUpon>FormSurveyAcceptReject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSurveyAcceptRejectInfinite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSurveyAcceptRejectInfinite.Designer.cs">
+      <DependentUpon>FormSurveyAcceptRejectInfinite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSurveyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSurveyAdd.Designer.cs">
+      <DependentUpon>FormSurveyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSurveyEditDepth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSurveyEditDepth.Designer.cs">
+      <DependentUpon>FormSurveyEditDepth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSurveyEditStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSurveyEditStatus.Designer.cs">
+      <DependentUpon>FormSurveyEditStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSurveyExportFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSurveyExportFilter.Designer.cs">
+      <DependentUpon>FormSurveyExportFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormSurveyLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormSurveyLog.Designer.cs">
+      <DependentUpon>FormSurveyLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormThresholdDPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormThresholdDPoint.Designer.cs">
+      <DependentUpon>FormThresholdDPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormToolFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormToolFace.Designer.cs">
+      <DependentUpon>FormToolFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormUnitSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormUnitSelection.Designer.cs">
+      <DependentUpon>FormUnitSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormUnitSelectionByDimension.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormUnitSelectionByDimension.Designer.cs">
+      <DependentUpon>FormUnitSelectionByDimension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ToolWindow.Designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlBattery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlBattery.Designer.cs">
+      <DependentUpon>UserControlBattery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlPulseHeight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlPulseHeight.Designer.cs">
+      <DependentUpon>UserControlPulseHeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlPump.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlPump.Designer.cs">
+      <DependentUpon>UserControlPump.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlSNR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlSNR.Designer.cs">
+      <DependentUpon>UserControlSNR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlTemperature.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlTemperature.Designer.cs">
+      <DependentUpon>UserControlTemperature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI\UserControlDPointArc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlDPointArc.Designer.cs">
+      <DependentUpon>UserControlDPointArc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControlDPoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControlDPoint.Designer.cs">
+      <DependentUpon>UserControlDPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\CAngle.cs" />
+    <Compile Include="Utilities\CBaseUnitConversion.cs" />
+    <Compile Include="Utilities\CDateTime.cs" />
+    <Compile Include="Utilities\CEvaluate.cs" />
+    <Compile Include="Utilities\CLicense.cs" />
+    <Compile Include="Utilities\CLocalAreaNetwork.cs" />
+    <Compile Include="Utilities\CPumpPressure.cs" />
+    <Compile Include="Utilities\CSurveyCalculation.cs" />
+    <Compile Include="Utilities\CUnitDensity.cs" />
+    <Compile Include="Utilities\CUnitLength.cs" />
+    <Compile Include="Utilities\CUnitPressure.cs" />
+    <Compile Include="Utilities\CUnitRateOfPenetration.cs" />
+    <Compile Include="Utilities\CUnitTemperature.cs" />
+    <EmbeddedResource Include="GUI\FormChat.resx">
+      <DependentUpon>FormChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormConfigureWITS.resx">
+      <DependentUpon>FormConfigureWITS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormConfigureWITSData.resx">
+      <DependentUpon>FormConfigureWITSData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormDPointSelection.resx">
+      <DependentUpon>FormDPointSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormECD.resx">
+      <DependentUpon>FormECD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormFFTEM.resx">
+      <DependentUpon>FormFFTEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormFFT.resx">
+      <DependentUpon>FormFFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormGamma.resx">
+      <DependentUpon>FormGamma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormINCWhileDrilling.resx">
+      <DependentUpon>FormINCWhileDrilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormIPAddress.resx">
+      <DependentUpon>FormIPAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormLASCurveSelection.resx">
+      <DependentUpon>FormLASCurveSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormLASExport.resx">
+      <DependentUpon>FormLASExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormLastSurvey.resx">
+      <DependentUpon>FormLastSurvey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormLegend.resx">
+      <DependentUpon>FormLegend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormLog.resx">
+      <DependentUpon>FormLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormMSASettings.resx">
+      <DependentUpon>FormMSASettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormPlotSamplesEM.resx">
+      <DependentUpon>FormPlotSamplesEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormPressureTransducerParameters.resx">
+      <DependentUpon>FormPressureTransducerParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormPlotSamples.resx">
+      <DependentUpon>FormPlotSamples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormPumpPowerTemp.resx">
+      <DependentUpon>FormPumpPowerTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQualifiers.resx">
+      <DependentUpon>FormQualifiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormRealTimeDetectLog.resx">
+      <DependentUpon>FormRealTimeDetectLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormReceiverSetting.resx">
+      <DependentUpon>FormReceiverSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormRegisterProduct.resx">
+      <DependentUpon>FormRegisterProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormRemoteControl560R.resx">
+      <DependentUpon>FormRemoteControl560R.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormServerMessage.resx">
+      <DependentUpon>FormServerMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormServerSetup.resx">
+      <DependentUpon>FormServerSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSNRPlot.resx">
+      <DependentUpon>FormSNRPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSurveyAcceptReject.resx">
+      <DependentUpon>FormSurveyAcceptReject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSurveyAcceptRejectInfinite.resx">
+      <DependentUpon>FormSurveyAcceptRejectInfinite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSurveyAdd.resx">
+      <DependentUpon>FormSurveyAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSurveyEditDepth.resx">
+      <DependentUpon>FormSurveyEditDepth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSurveyEditStatus.resx">
+      <DependentUpon>FormSurveyEditStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSurveyExportFilter.resx">
+      <DependentUpon>FormSurveyExportFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormSurveyLog.resx">
+      <DependentUpon>FormSurveyLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormThresholdDPoint.resx">
+      <DependentUpon>FormThresholdDPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormToolFace.resx">
+      <DependentUpon>FormToolFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormUnitSelection.resx">
+      <DependentUpon>FormUnitSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormUnitSelectionByDimension.resx">
+      <DependentUpon>FormUnitSelectionByDimension.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlSNR.resx">
+      <DependentUpon>UserControlSNR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="GUI\UserControlDPointArc.resx">
+      <DependentUpon>UserControlDPointArc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControlDPoint.resx">
+      <DependentUpon>UserControlDPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Data\DataSetFormSettings.xsc">
+      <DependentUpon>DataSetFormSettings.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetFormSettings.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFormSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\DataSetFormSettings.xss">
+      <DependentUpon>DataSetFormSettings.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetProtocolCommands.xsc">
+      <DependentUpon>DataSetProtocolCommands.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetProtocolCommands.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProtocolCommands.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\DataSetProtocolCommands.xss">
+      <DependentUpon>DataSetProtocolCommands.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetSettings.xsc">
+      <DependentUpon>DataSetSettings.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetSettings.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\DataSetSettings.xss">
+      <DependentUpon>DataSetSettings.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetWITS.xsc">
+      <DependentUpon>DataSetWITS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DataSetWITS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetWITS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\DataSetWITS.xss">
+      <DependentUpon>DataSetWITS.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\XMLFileFormSettingsDefault.xml" />
+    <Content Include="resources\scrolling.png" />
+    <Content Include="resources\scrollingStop.png" />
+    <Content Include="resources\searchTextBackward.png" />
+    <Content Include="resources\searchTextForward.png" />
+    <None Include="resources\RoundLAB Logo_Red White.jpg" />
+    <None Include="resources\RoundLAB Logo_Red Black.jpg" />
+    <None Include="resources\envelope.png" />
+    <None Include="Images\GTF.png" />
+    <Content Include="Data\XMLFileProtocolCommandsDefault.xml" />
+    <Content Include="Data\XMLFileSettingsDefault.xml" />
+    <Content Include="Data\XMLFileWITSDefault.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Images\MTF.png" />
+    <Content Include="logo.ico" />
+    <Content Include="Properties\logo.png" />
+    <None Include="resources\MTF.png" />
+    <None Include="resources\GTF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DSPLib\DSPLib.csproj">
+      <Project>{2c2efae5-ac26-4172-89bc-f5ae5d021f09}</Project>
+      <Name>DSPLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if not exist c:\\APS mkdir c:\\APS
+if not exist c:\\APS\\Data mkdir c:\\APS\\Data
+
+REM copy "$(ProjectDir)\\Data\\XMLFileFormSettingsDefault.xml" c:\\aps\\data\\
+REM copy "$(ProjectDir)\\Data\\XMLFileProtocolCommandsDefault.xml" c:\\aps\\data
+REM copy "$(ProjectDir)\\Data\\XMLFileWITSDefault.xml" c:\\aps\\data\\
+REM copy "$(ProjectDir)\\Data\\XMLFileSettingsDefault.xml" c:\\aps\\data\\
+
+REM xcopy $(ProjectDir)\\Database\\Log.db  $(TargetDir)  /F /R /Y /I
+if "$(ConfigurationName)" == "Debug" (
+REM copy "$(ProjectDir)\\Installer\\SQLite.Designer.dll" $(ProjectDir)\\bin\\debug
+REM copy "$(ProjectDir)\\Installer\\SQLite.Interop.dll" $(ProjectDir)\\bin\\debug
+REM copy "$(ProjectDir)\\Installer\\System.Data.SQLite.dll" $(ProjectDir)\\bin\\debug
+) else (
+REM copy "$(ProjectDir)\\Installer\\SQLite.Designer.dll" $(ProjectDir)\\bin\\release
+REM copy "$(ProjectDir)\\Installer\\SQLite.Interop.dll" $(ProjectDir)\\bin\\release 
+REM copy "$(ProjectDir)\\Installer\\System.Data.SQLite.dll" $(ProjectDir)\\bin\\release
+)
+
+
+
+</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>REM copy $(TargetPath) $(ProjectDir)\Installer\
+REM copy $(TargetDir)\MPM.pdb $(ProjectDir)\Installer\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

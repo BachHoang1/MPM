@@ -1,0 +1,10 @@
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\DSPLib\bin\Debug\netstandard2.0\DSPLib.deps.json
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\DSPLib\bin\Debug\netstandard2.0\DSPLib.dll
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\DSPLib\bin\Debug\netstandard2.0\DSPLib.pdb
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\DSPLib\obj\Debug\netstandard2.0\DSPLib.csproj.AssemblyReference.cache
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\DSPLib\obj\Debug\netstandard2.0\DSPLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\DSPLib\obj\Debug\netstandard2.0\DSPLib.AssemblyInfoInputs.cache
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\DSPLib\obj\Debug\netstandard2.0\DSPLib.AssemblyInfo.cs
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\DSPLib\obj\Debug\netstandard2.0\DSPLib.csproj.CoreCompileInputs.cache
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\DSPLib\obj\Debug\netstandard2.0\DSPLib.dll
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\DSPLib\obj\Debug\netstandard2.0\DSPLib.pdb

@@ -1,0 +1,7 @@
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsDockClient\obj\Debug\WinFormsDockClient.csprojAssemblyReference.cache
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsDockClient\obj\Debug\WinFormsDockClient.Form1.resources
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsDockClient\obj\Debug\WinFormsDockClient.Form2.resources
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsDockClient\obj\Debug\WinFormsDockClient.ToolWindow.resources
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsDockClient\obj\Debug\WinFormsDockClient.Properties.Resources.resources
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsDockClient\obj\Debug\WinFormsDockClient.csproj.GenerateResource.cache
+C:\Users\hd.nguyen.APPLIEDPHYSICS\workspace\SVN\Windows\MPM\Project\WinFormsDockClient\obj\Debug\WinFormsDockClient.csproj.CoreCompileInputs.cache
